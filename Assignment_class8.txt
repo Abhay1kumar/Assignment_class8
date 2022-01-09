@@ -1,0 +1,107 @@
+Question :1
+The class Movie is stated below. An instance of class Movie represents a film. This class has the following three properties:
+
+code:
+class movie {
+    constructor(title,studio,rating) {
+        this.title=title;
+        this.studio=studio;
+        this.rating=rating;
+    }
+    // instance method obj
+    getMovieData() {
+        let data =`
+        title:${this.title}
+        studio:${this.studio}
+        rating:${this.rating}`;
+        return data;
+    };
+
+}
+
+let movie1= new movie ("Baajigar","Zee studio","PG13");
+console.log(movie1.getMovieData());
+
+Answer:
+
+        title:Baajigar
+        studio:Zee studio
+        rating:PG13
+
+
+****************************************************************
+Question:3
+Write a “person” class to hold all the details.
+
+code:
+class person {
+    constructor(firstName,lastName,email,phone,city,country) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phone = phone;
+        this.city = city;
+        this.country = country;
+    }
+    getPersonData() {
+      return `
+      ${this.firstName} 
+      ${this.lastName} 
+      ${this.email} 
+      ${this.phone} 
+      ${this.city} 
+      ${this.country}`
+    }
+}
+
+let person1= new person ("Abhay","Kumar","kumarabhay401@gmail.com","9999-895-695","Noida","India");
+console.log(person1.getPersonData());
+
+Answer:
+      Abhay 
+      Kumar 
+      kumarabhay401@gmail.com 
+      9999-895-695 
+      Noida 
+      India
+
+**************************************************************************************
+
+Question:4
+write a class to calculate uber price.
+
+code:
+
+
+class UberPrice {
+  constructor(vechicaltype,picKupPoint,dropPoint,totalDistence,price,rating) {
+    this.vechicaltype = vechicaltype;
+    this.picKupPoint = picKupPoint;
+    this.dropPoint = dropPoint;
+    this.totalDistence = totalDistence;
+    this.price = price;
+    this.rating = rating;
+  }
+  getUberData() {
+      return         `
+        ${this.vechicaltype}
+        ${this.picKupPoint} 
+        ${this.dropPoint} 
+        ${this.totalDistence} 
+        ${this.price} 
+        ${this.rating}`;
+  }
+}
+
+let firstRide = new UberPrice("Car","Noida","Delhi","34 KM","345$","Good");
+console.log(firstRide.getUberData());
+
+Ans;
+
+ Car
+        Noida 
+        Delhi 
+        34 KM 
+        345$ 
+        Good
+
